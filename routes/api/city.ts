@@ -1,5 +1,5 @@
 import { HandlerContext } from "$fresh/server.ts";
-import { config } from "https://deno.land/x/dotenv@v3.2.0/mod.ts";
+import { config } from "https://deno.land/std@0.146.0/dotenv/mod.ts";
 
 const { IPINFO_TOKEN } = await config();
 
