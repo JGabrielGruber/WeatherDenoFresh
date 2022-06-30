@@ -1,7 +1,7 @@
 import { HandlerContext } from "$fresh/server.ts";
 import { config } from "https://deno.land/x/dotenv@v3.2.0/mod.ts";
 
-const { IPINFO_TOKEN } = config();
+const { IPINFO_TOKEN } = await config();
 
 export const handler = async (
   _req: Request,
