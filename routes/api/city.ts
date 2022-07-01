@@ -7,6 +7,7 @@ export const handler = async (
   _req: Request,
   _ctx: HandlerContext,
 ): Promise<Response> => {
+  console.log(_ctx);
   const address = _ctx.remoteAddr.hostname;
   const resp = await fetch(
     `https://ipinfo.io/${address}?token=${IPINFO_TOKEN}`,
